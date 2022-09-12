@@ -719,7 +719,7 @@ header .fa-bars {
   align-items: center;
 }
 .banner .content .animations .rounded {
-  width: 3.5rem;
+  width: 3.1rem;
   height: 5rem;
   border: 0.3rem solid #ff5959;
   border-radius: 35%;
@@ -729,8 +729,8 @@ header .fa-bars {
 .banner .content .animations .rounded::before {
   content: "";
   display: inline-block;
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.5rem;
+  height: 0.5rem;
   background: #ff5959;
   border-radius: 50%;
   position: absolute;
@@ -745,8 +745,8 @@ header .fa-bars {
 }
 .banner .content .animations .arrows span {
   display: block;
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1rem;
+  height: 1rem;
   background-color: transparent;
   border-top: 0.3rem solid #ff5959;
   border-left: 0.3rem solid #fff;
