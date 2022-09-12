@@ -1,0 +1,347 @@
+.look {
+  h2 {
+    font-size: 3.5rem;
+    padding: 2rem 0;
+    span {
+      color: #ff5959;
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .image {
+      flex-basis: 39%;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      flex-basis: 57%;
+      .box-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .box {
+          flex-basis: 49%;
+          gap: 2rem;
+          margin-bottom: 5rem;
+          align-self: flex-start;
+          .fa {
+            font-size: 3.5rem;
+            padding: 1rem 0;
+            color: #cdd8e5;
+            transition: all 0.3s ease;
+          }
+          h3 {
+            font-size: 2rem;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            &:hover {
+              color: #4f9da6;
+            }
+          }
+          p {
+            font-size: 1.5rem;
+            color: #5e6271;
+            line-height: 1.7;
+          }
+          &:hover {
+            .fa {
+              color: #4f9da6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.services {
+  background: fixed url(../images/services.jpg) center/cover no-repeat,
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  max-width: 100%;
+  min-height: 69rem;
+  background-blend-mode: overlay;
+  h2 {
+    font-size: 3.5rem;
+    padding: 2rem 0;
+    color: #fff;
+    span {
+      color: #ff5959;
+    }
+  }
+  .row {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .box {
+      flex-basis: 31%;
+      background-color: #fff;
+      padding: 2rem;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      .fa,
+      .fas {
+        font-size: 3.5rem;
+        padding: 1rem 0;
+        color: #ff5959;
+        transition: all 0.3s ease;
+      }
+      h3 {
+        font-size: 2rem;
+        padding: 1rem 0;
+        transition: all 0.3s ease;
+        &:hover {
+          color: #4f9da6;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        color: #5e6271;
+        line-height: 1.7;
+      }
+      &:hover {
+        .fa {
+          color: #4f9da6;
+        }
+      }
+    }
+  }
+}
+
+.plans {
+  h2 {
+    font-size: 3.5rem;
+    padding: 2rem 0;
+    span {
+      color: #ff5959;
+    }
+    + {
+      ul {
+        padding: 1.5rem 0;
+        li {
+          &:first-of-type {
+            background: #ff5959;
+            color: #fff;
+            border-radius: 0.5rem;
+            margin-left: 0;
+          }
+          display: inline-block;
+          font-size: 2rem;
+          margin: 0 0.5rem;
+          padding: 1rem 2rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    .plan {
+      flex-basis: 30%;
+      border: 0.1rem solid rgba(0, 0, 0, 0.125);
+      text-align: center;
+      border-radius: 0.7rem;
+      padding: 6rem;
+      transition: all 0.3s ease;
+      h4 {
+        font-size: 1.6rem;
+        color: #4f9da6;
+        padding: 1rem 0;
+      }
+      p {
+        font-size: 5.5rem;
+        font-weight: bold;
+        padding: 1rem 0;
+        &::before {
+          content: "$";
+          position: relative;
+          display: inline-block;
+          top: -2.5rem;
+          left: 0;
+          font-size: 2.5rem;
+          font-weight: normal;
+        }
+      }
+      .plan-list {
+        margin: 2rem 0;
+        li {
+          font-size: 1.5rem;
+          line-height: 2;
+          color: #5e6271;
+        }
+      }
+      a {
+        color: #ff5959;
+        font-size: 2rem;
+      }
+      &:nth-of-type(2) {
+        background: #eff6f7;
+      }
+      &:hover {
+        background: #eff6f7;
+      }
+    }
+  }
+}
+
+.clients {
+  background: fixed url(../images/clients.jpg) center/cover no-repeat,
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  width: 100%;
+  max-width: 100%;
+  min-height: 49rem;
+  h2 {
+    font-size: 3.5rem;
+    padding: 2rem 0;
+    color: #fff;
+    span {
+      color: #ff5959;
+    }
+  }
+  .row {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .box {
+      padding: 2.5rem;
+      border-radius: 1rem;
+      flex-basis: 31%;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      .fas {
+        font-size: 3.5rem;
+        padding: 1rem 0;
+        color: #ff5959;
+        transition: all 0.3s ease;
+      }
+      .content {
+        h3 {
+          font-size: 3rem;
+          padding: 1rem 0;
+          color: #4f9da6;
+        }
+        p {
+          font-size: 1.7rem;
+          color: #5e6271;
+          line-height: 1.7;
+        }
+        &:hover {
+          .fa {
+            color: #4f9da6;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section {
+    padding: 3rem;
+  }
+  .look {
+    .row {
+      .image {
+        flex-basis: 50%;
+      }
+      .content {
+        flex-basis: 45%;
+        .box-container {
+          .box {
+            flex-basis: 490%;
+            margin-bottom: 2rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .services {
+    .row {
+      .box {
+        flex-basis: 48%;
+      }
+    }
+  }
+
+  .clients {
+    .row {
+      .box {
+        flex-basis: 48%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .look {
+    h2 {
+      text-align: center;
+    }
+    .row {
+      .image,
+      .content {
+        flex-basis: 100%;
+        .box-container {
+          .box {
+            flex-basis: 100%;
+            margin-bottom: 1rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .services {
+    h2 {
+      text-align: center;
+    }
+    .row {
+      .box {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .plans {
+    .row {
+      .plan {
+        flex-basis: 100%;
+      }
+    }
+  }
+  .clients {
+    h2 {
+      text-align: center;
+    }
+    .row {
+      .box {
+        padding: 1rem;
+        flex-basis: 100%;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

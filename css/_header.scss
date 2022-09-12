@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1000;
+  .logo {
+    flex: 2;
+    h1 {
+      margin-left: 3rem;
+      font-size: 3rem;
+      color: #fff;
+      span {
+        color: #ff5959;
+      }
+    }
+  }
+  .nav {
+    flex: 1;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        margin-left: 1.5rem;
+        a {
+          font-size: 1.7rem;
+          padding: 0.7rem 1.5rem;
+          color: #fff;
+          transition: all 0.3s ease;
+          &.active {
+            background: orange;
+            color: #111;
+          }
+          &:hover:not(.active) {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+  .fa-bars {
+    color: #fff;
+    font-size: 3.3rem;
+    display: none;
+    cursor: pointer;
+  }
+}
