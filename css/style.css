@@ -81,7 +81,6 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  max-width: 100%;
   z-index: 1000;
 }
 header .logo {
@@ -230,7 +229,7 @@ header .fa-bars {
   gap: 2rem;
 }
 .information .row .info {
-  flex-basis: 59%;
+  flex-basis: 61%;
 }
 .information .row .info h3 {
   font-size: 3rem;
@@ -239,7 +238,7 @@ header .fa-bars {
 .information .row .info p {
   font-size: 1.5rem;
   padding: 1rem 0;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #5e6271;
 }
 .information .row .info p span {
@@ -278,7 +277,8 @@ header .fa-bars {
 .information .row .bio ul li {
   color: #5e6271;
   font-size: 1.5rem;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
+  line-height: 1.8;
 }
 
 .description {
@@ -360,10 +360,6 @@ header .fa-bars {
   }
   .links {
     padding: 1.3rem 3rem;
-  }
-  .information .row .info,
-.information .row .bio {
-    flex-basis: 48.5%;
   }
   .description h2 {
     text-align: center;
@@ -689,6 +685,7 @@ header .fa-bars {
 .banner {
   background: url(../images/banner2.jpg) top/cover no-repeat, linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
   min-height: 100vh;
+  width: 100vw;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -698,9 +695,13 @@ header .fa-bars {
 }
 .banner .content {
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .banner .content h5 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: normal;
 }
 .banner .content h2 {
@@ -712,11 +713,7 @@ header .fa-bars {
   color: #facf5a;
 }
 .banner .content .animations {
-  padding: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 3rem 0;
 }
 .banner .content .animations .rounded {
   width: 3.1rem;
@@ -728,14 +725,14 @@ header .fa-bars {
 }
 .banner .content .animations .rounded::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 0.5rem;
   height: 0.5rem;
   background: #ff5959;
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  translate: -50%;
+  transform: translate(-50%, -15%);
   top: 15%;
   -webkit-animation: animate 1.2s ease infinite;
           animation: animate 1.2s ease infinite;
@@ -747,11 +744,14 @@ header .fa-bars {
   display: block;
   width: 1rem;
   height: 1rem;
+  margin: 1.5rem auto;
   background-color: transparent;
   border-top: 0.3rem solid #ff5959;
   border-left: 0.3rem solid #fff;
+  border-right: 0.3 solid transparent;
+  border-bottom: 0.3 solid transparent;
   transform: rotate(-135deg);
-  margin: 1rem 0;
+  text-align: center;
   -webkit-animation: arrow 1s ease infinite alternate;
           animation: arrow 1s ease infinite alternate;
 }
@@ -896,15 +896,15 @@ header .fa-bars {
 .desire .box-container .percentages .box-content .box::before {
   content: "";
   display: block;
-  width: 70%;
+  width: 50%;
   height: 100%;
   border-radius: 0.5rem;
   background-color: #4f9da6;
 }
-.desire .box-container .percentages .box-content .box:nth-of-type(2)::before {
-  width: 80%;
+.desire .box-container .percentages .box-content:nth-of-type(2) .box::before {
+  width: 70%;
 }
-.desire .box-container .percentages .box-content .box:last-of-type::before {
+.desire .box-container .percentages .box-content:last-of-type .box::before {
   width: 90%;
 }
 
@@ -1161,11 +1161,11 @@ footer.section .row .icons .fab:hover {
   html {
     font-size: 55%;
   }
-}
-@media screen and (max-width: 768px) {
   section {
     padding: 3rem;
   }
+}
+@media screen and (max-width: 768px) {
   header {
     flex-direction: column;
     padding: 0;
@@ -1175,6 +1175,7 @@ footer.section .row .icons .fab:hover {
   }
   header .logo h1 {
     margin: 3rem;
+    margin-bottom: 1.5rem;
   }
   header .nav {
     width: 100%;
