@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     .info {
-      flex-basis: 61%;
+      flex: 1 1 61%;
       h3 {
         font-size: 3rem;
         padding: 1rem 0;
@@ -58,7 +58,7 @@
       }
     }
     .bio {
-      flex-basis: 35%;
+      flex: 1 1 35%;
       h3 {
         font-size: 3rem;
         padding: 1rem 0;
@@ -93,7 +93,7 @@
     margin-top: 1rem;
     gap: 2rem;
     .box {
-      flex-basis: 23%;
+      flex: 1 1 23%;
       .fa {
         font-size: 3rem;
         padding: 1rem 0;
@@ -161,20 +161,6 @@
     padding: 1.3rem 3rem;
   }
 
-  .description {
-    h2 {
-      text-align: center;
-    }
-    .row {
-      .box {
-        flex-basis: 48%;
-        text-align: center;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
   .information {
     .row {
       .info,
@@ -183,6 +169,21 @@
       }
     }
   }
+
+  .description {
+    h2 {
+      text-align: center;
+    }
+    .row {
+      .box {
+        flex: 1 1 48%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
   .description {
     h2 {
       text-align: center;

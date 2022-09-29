@@ -1,8 +1,4 @@
-@use "./globals";
-@use "./header";
-@use "./contact";
-@use "./about";
-@use "./services";
+@use "./globals/" as *;
 
 .banner {
   background: url(../images/banner2.jpg) top/cover no-repeat,
