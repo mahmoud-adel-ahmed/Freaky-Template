@@ -476,7 +476,7 @@ footer.section {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 62em) {
   html {
     font-size: 55%;
   }
@@ -485,7 +485,7 @@ footer.section {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   header {
     flex-direction: column;
     padding: 0;
@@ -635,7 +635,7 @@ footer.section {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125em) {
   html {
     font-size: 50%;
   }

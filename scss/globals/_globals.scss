@@ -22,10 +22,14 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 section,
 .section {
-  width: 115rem;
-  max-width: 100%;
+  width: 100%;
+  max-width: 115rem;
   padding: 10rem 3rem;
   margin: auto;
 }
