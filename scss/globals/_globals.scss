@@ -9,7 +9,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: clamp(0.4rem, 0.2vw + 6px, 1rem - 6px);
+  // font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
