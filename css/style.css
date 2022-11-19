@@ -799,8 +799,7 @@ header .fa-bars {
   gap: 2rem;
 }
 .about .row .image {
-  flex-basis: 47%;
-  min-height: 25rem;
+  flex-basis: 49%;
 }
 .about .row .image img {
   width: 100%;
@@ -1167,6 +1166,17 @@ footer.section .row .icons .fab:hover {
   section {
     padding: 3rem;
   }
+  .about .row .image,
+.about .row .content {
+    flex-basis: 100%;
+  }
+  .about .box-container {
+    margin-top: 4rem;
+  }
+  .about .box-container .box {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 48em) {
   header {
@@ -1227,17 +1237,6 @@ footer.section .row .icons .fab:hover {
   }
   .banner .content h2 {
     font-size: 5rem;
-  }
-  .about .row .image,
-.about .row .content {
-    flex-basis: 100%;
-  }
-  .about .box-container {
-    margin-top: 4rem;
-  }
-  .about .box-container .box {
-    flex-basis: 100%;
-    text-align: center;
   }
   .desire .box-container .content {
     flex-basis: 100%;
